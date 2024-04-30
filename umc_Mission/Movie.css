@@ -1,0 +1,75 @@
+body {
+    background-color: #22254b;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 8px;
+  }
+  
+  
+  .movie-container {
+    width: 250px;
+    margin: 16px;
+    background-color: #373b69;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    position: relative; /* 포스터와 정보가 겹치도록 설정 */
+    transition: opacity 0.2s linear;
+  }
+  
+  
+  .movie-container img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .movie-container .movie-info {
+    display: none; /* 포스터 컨테이너에 마우스를 올렸을 때 보이도록 변경 */
+  }
+  
+  .movie-container:hover .movie-info {
+    display: block; /* 포스터 컨테이너에 마우스를 올렸을 때 보이도록 변경 */
+    position: absolute; /* Overview에 대해 절대 위치 설정 */
+    top: 0; /* 부모 요소의 위쪽으로부터의 거리 */
+    left: 0; /* 부모 요소의 왼쪽으로부터의 거리 */
+    width: 250px; 
+    height: 375px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8); /* 배경색 및 투명도 설정 */
+  }
+  
+  #movie-title {
+    margin: 15px;
+    margin-top: 30px;
+  }
+  
+  #movie-info {
+    margin: 15px;
+    text-align: justify;
+    max-height: 9em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .movie-container .effect{ 
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between; 
+    color: white;
+    background-color: #373b69;
+    height: 70px;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .movie-container .effect span {
+    margin-right: 10px; /* 제목과 평점 사이의 간격 조절 */
+  }
+  
+  .movie-container .effect .title {
+    margin-left: 10px; /* 제목을 오른쪽으로 이동 */
+  }
