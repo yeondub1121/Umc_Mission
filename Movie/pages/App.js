@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import styled from 'styled-components';
 import Navbar from '../components/Navbar';
 import MainPage from '../pages/main';
-import JoinPage from '../pages/join';
 import NowPlayingPage from '../pages/nowPlaying';
 import PopularPage from '../pages/popular';
 import TopRatedPage from '../pages/topRated';
