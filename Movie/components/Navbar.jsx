@@ -21,10 +21,7 @@ const Logo = styled.div`
   margin-left: 20px;
 `;
 
-const NavLink = styled(Link)`
-  text-decoration: none;
-  color: ${props => (props.isLogin ? 'white' : 'white')};
-`;
+
 
 const Lists = styled.div`
   font-size: 14px;
