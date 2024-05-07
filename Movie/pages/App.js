@@ -15,13 +15,10 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path="/" Component={MainPage} />
-          <Route path="/join" Component={JoinPage} />
           <Route path="/nowplaying" Component={NowPlayingPage} />
           <Route path="/popular" Component={PopularPage} />
           <Route path="/toprated" Component={TopRatedPage} />
           <Route path="/upcoming" Component={UpComingPage} />
-          <Route path="/movie/:title" Component={DetailPage} />
-          <Route path="*" Component={ErrorPage} />
         </Routes>
       </div>
     </BrowserRouter>
