@@ -7,8 +7,7 @@ import NowPlayingPage from '../pages/nowPlaying';
 import PopularPage from '../pages/popular';
 import TopRatedPage from '../pages/topRated';
 import UpComingPage from '../pages/upComing';
-import DetailPage from './detail';
-import ErrorPage from './error';
+
 
 export default function App() {
   return (
