@@ -41,9 +41,6 @@ export default function Navbar() {
         <NavLink to="/">UMC Movie</NavLink>
       </Logo>
       <Lists>
-        <NavLink to="/" isLogin={true} onClick={() => setIsClicked(!isClicked)}>
-          {isClicked ? '로그인' : '회원가입'}
-        </NavLink>
         <NavLink to="/popular" isLogin={false}>
           Popular
         </NavLink>
